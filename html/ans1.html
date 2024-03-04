@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/ans1.js"> </script>
+    <title>Answer 1</title>
+</head>
+<body>
+    <h3> Calculate Net BIll </h3>
+    <table>
+        <tr> <td> Enter the Bill No </td> <td> <input oninput="val()" id="inbno" required>  </td> </tr>
+        <tr> <td> Enter the Bill Date </td> <td> <input id="inbdate" type="date" required>  </td> </tr>
+        <tr> <td> Enter the Bill Amount Rs. </td> <td> <input oninput="val()" id="inbamt" >  </td> </tr>
+        <tr> <td> Discount </td> <td> <span id="dis" >0.0 </span></td> </tr>
+        <tr> <td> Tax </td> <td> <span id="tax" >0.0 </span></td> </tr>
+        <tr colspan="2" > <td id="erresult" style="color:red">  </td></tr>
+        <tr colspan="2" > <td id="result" style="color:green">  </td></tr>
+    </table>
+    <button onclick="val()">  Calculate </button>
+</body>
+</html>
