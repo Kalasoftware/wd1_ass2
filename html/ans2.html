@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/js/ans2.js"> </script>
     <title>Hotel Registration </title>
 </head>
+
 <body>
-<h3> Hotel Registration form </h3>
+    <h3> Hotel Registration form </h3>
     <form name="hotelreg">
-        <table> 
-            <tr> <td>Enter the name of hotel :  </td> <td> <input name="hname"> </td>  </tr>
-            <tr> <td> Hotel Amenties  </td> </tr>
-            <tr> <td>1. Conference Room (YES/NO) : </td> <td> Yes <input type="radio" name="con" value="yes"> No  <input type="radio" name="con" value="no"></td> </tr>
-            <tr> <td>2. Swimming Pool (YES/NO)  : </td> <td> Yes <input type="radio" name="swim" value="yes"> No  <input type="radio" name="swim" value="no"></td> </tr>
-            <tr> <td>3. Gym (YES/NO)  : </td> <td> Yes <input type="radio" name="gym" value="yes"> No  <input type="radio" name="gym" value="no"></td> </tr>
-            <tr> <td>4. Wi Fi Internet (YES/NO) : </td> <td> Yes <input type="radio" name="wifi" value="yes"> No  <input type="radio" name="wifi" value="no"></td> </tr>
-            <tr> <td>5. 24 Hours Restaurant (YES/NO) : </td> <td> Yes <input type="radio" name="hrres" value="yes"> No  <input type="radio" name="hrres" value="no"></td> </tr>
-            <tr> <td>6. Credit Card Payment (YES/NO) : </td> <td> Yes <input type="radio" name="cred" value="yes"> No  <input type="radio" name="cred" value="no"></td> </tr>
-            <tr> <td>7. 24 Hours Reception Counter (YES/NO) : </td> <td> Yes <input type="radio" name="rec" value="yes"> No  <input type="radio" name="rec" value="no"></td> </tr>
+        <table>
+            <tr>
+                <td>Enter the name of hotel : </td>
+                <td> <input name="hname"> </td>
+            </tr>
+            <tr>
+                <td> Hotel Amenties </td>
+            </tr>
+            <tr>
+                <td>1. Conference Room (YES/NO) : </td>
+                <td> Yes <input type="radio" name="con" value="yes"> No <input type="radio" name="con" value="no"></td>
+            </tr>
+            <tr>
+                <td>2. Swimming Pool (YES/NO) : </td>
+                <td> Yes <input type="radio" name="swim" value="yes"> No <input type="radio" name="swim" value="no">
+                </td>
+            </tr>
+            <tr>
+                <td>3. Gym (YES/NO) : </td>
+                <td> Yes <input type="radio" name="gym" value="yes"> No <input type="radio" name="gym" value="no"></td>
+            </tr>
+            <tr>
+                <td>4. Wi Fi Internet (YES/NO) : </td>
+                <td> Yes <input type="radio" name="wifi" value="yes"> No <input type="radio" name="wifi" value="no">
+                </td>
+            </tr>
+            <tr>
+                <td>5. 24 Hours Restaurant (YES/NO) : </td>
+                <td> Yes <input type="radio" name="hrres" value="yes"> No <input type="radio" name="hrres" value="no">
+                </td>
+            </tr>
+            <tr>
+                <td>6. Credit Card Payment (YES/NO) : </td>
+                <td> Yes <input type="radio" name="cred" value="yes"> No <input type="radio" name="cred" value="no">
+                </td>
+            </tr>
+            <tr>
+                <td>7. 24 Hours Reception Counter (YES/NO) : </td>
+                <td> Yes <input type="radio" name="rec" value="yes"> No <input type="radio" name="rec" value="no"></td>
+            </tr>
 
         </table>
     </form>
     <button onclick="val()"> Submit </button>
+    <br>
+    <span id="er" style="color:red"> <br>
+        <span id="re"> </span>
+    </span>
 </body>
+
 </html>
