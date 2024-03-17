@@ -23,6 +23,8 @@ function val()
     var mlist = [con,swim,gym,wifi,hrres,cred,rec];
     console.log(mlist);
     
+    
+
     var rating=0;
     var aflag=true;
 

@@ -1,31 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <script src="/js/ans7.js"> </script>
+    <script>
+        function validForm() {
+            let spid = document.forms["studregForm"]["spidin"]
+            let rollno = document.forms["studregForm"]["rollin"]
+            let name = document.forms["studregForm"]["namein"]
+            let sem = document.forms["studregForm"]["semin"]
+            let div = document.forms["studregForm"]["divin"]
+            let age = document.forms["studregForm"]["agein"]
+            let gender = document.forms["studregForm"]["gender"]
+            let email = document.forms["studregForm"]["emailin"]
+            let mobile = document.forms["studregForm"]["mobilein"]
+            let linedin = document.forms["studregForm"]["linkdin"]
+            let userName = document.forms["studregForm"]["userin"]
+            let pasin = document.forms["studregForm"]["passin"]
+            let repassin = document.forms["studregForm"]["repassin"]
+            let checkboxs = document.forms["studregForm"]["plin"]
+            let states = document.forms["studregForm"]["statein"]
+            let city = document.forms["studregForm"]["cityin"]
+
+            let spiderr = document.getElementById("spiderr");
+            let rollerr = document.getElementById("rollerr")
+            let nameerr = document.getElementById("nameerr")
+            let semerr= document.getElementById("semerr")
+            let  diverr= document.getElementById("diverr")
+            let ageerr = document.getElementById("ageerr")
+            let gendererr = document.getElementById("gendererr")
+            let  emailerr = document.getElementById("emailerr")
+            let mobilerr = document.getElementById("mobileerr")
+            let linkderr = document.getElementById("linkderr")
+            let usererr = document.getElementById("usererr")
+            let passerr = document.getElementById("passerr")
+           let  repasserr = document.getElementById("repasserr")
+           let checkboxerr  = document.getElementById("checkboxerr")
+           let stateerr = document.getElementById("stateerr");
+           let cityerr = document.getElementById("cityerr");
+     
+            spidcheck(spid,spiderr)
+            rollcheck(rollno,rollerr)
+            namecheck(name,nameerr)
+            semcheck(sem,semerr)
+            divcheck(div,diverr)
+            agecheck(age,ageerr)
+            gendercheck(gender,gendererr)
+            emailc(email,emailerr)
+            mobilec(mobile,mobileerr)
+            linkdinc(linedin,linkderr)
+            usernamec(userName,usererr)
+            checkboxc(checkboxs,checkboxerr)
+        }
+
+    </script>
 </head>
+
 <body>
-    <h3> Student registration  </h3>
-    <form name="studregForm"> 
-    <table>
-        <tr><td> SPID</td><td> <input name="spidin"/></td> </tr>
-        <tr><td> ROLL NO:</td><td> <input name="rollin"/></td> </tr>
-        <tr><td> NAME</td><td> <input name="namin"/></td> </tr>
-        <tr><td> SEM</td><td> <input name="semin"/></td> </tr>
-        <tr><td> DIV</td><td> <input name="divin"/></td> </tr>
-        <tr><td> AGE</td><td> <input name="agein"/></td> </tr>
-        <tr><td> GENDER</td><td> Male<input name="gender" type="radio" value="male"/>Female <input name="gender" value="female" type="radio"/></td> </tr>
-        <tr><td> EMAIL </td><td> <input name="emailin"/></td> </tr>
-        <tr><td> MOBILE NO:</td><td> <input name="mobilein"/></td> </tr>
-        <tr><td> LINKEDIN PROFILE URL</td><td> <input name="linkdin"/></td> </tr>
-        <tr><td> USERNAME</td><td> <input name="userin"/></td> </tr>
-        <tr><td> PASSWORD</td><td> <input type="password" name="passin"/></td> </tr>
-        <tr><td> RE-ENTER PASSWORD</td><td> <input name="repassin"/></td> </tr>
-        <tr><td> PROGRAMMING LANGUAGES </td><td> <input type="checkbox" name="plin" value="C"/>C<input type="checkbox" name="plin" value="c++" >C++ <input type="checkbox" name="plin" value="js"/>Javascript</td> </tr>
-        <tr><td> STATE </td><td> <select name="statein"> </select> </td> </tr>
-        <tr><td> CITY </td><td> <select name="cityin"> </select></td> </tr>
-    </table>
+    <h3> Student registration </h3o>
+    <form name="studregForm">
+        ]
+        </script>
+        <table>
+            <tr>
+                <td> SPID</td>
+                <td> <input name="spidin" /></td>
+                <td> <span id="spiderr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> ROLL NO:</td>
+                <td> <input name="rollin" /></td>
+                <td> <span id="rollerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> NAME</td>
+                <td> <input name="namein" /></td>
+                <td> <span id="nameerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> SEM</td>
+                <td> <input name="semin" /></td>
+                <td> <span id="semerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> DIV</td>
+                <td> <input name="divin" /></td>
+                <td> <span id="diverr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> AGE</td>
+                <td> <input name="agein" /></td>
+                <td> <span id="ageerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> GENDER</td>
+                <td> Male<input name="gender" type="radio" value="male" />Female <input name="gender" value="female"
+                        type="radio" /></td>
+                <td> <span id="gendererr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> EMAIL </td>
+                <td> <input name="emailin" /></td>
+                <td> <span id="emailerr"style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> MOBILE NO:</td>
+                <td> <input name="mobilein" /></td>
+                <td> <span id="mobileerr"style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> LINKEDIN PROFILE URL</td>
+                <td> <input name="linkdin" /></td>
+                <td> <span id="linkderr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> USERNAME</td>
+                <td> <input name="userin" /></td>
+                <td> <span id="usererr"style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> PASSWORD</td>
+                <td> <input type="" name="passin" /></td>
+                <td> <span id="passerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> RE-ENTER PASSWORD</td>
+                <td> <input name="repassin" /></td>
+                <td> <span id="repasserr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> PROGRAMMING LANGUAGES </td>
+                <td> <input type="checkbox" name="plin" value="C" />C<input type="checkbox" name="plin" value="c++">C++
+                    <input type="checkbox" name="plin" value="js" />Javascript
+                </td>
+                <td> <span id="checkboxerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> STATE </td>
+                <td> <select name="statein"> </select> </td>
+                <td> <span id="stateerr" style="color:red;"> </span></td>
+            </tr>
+            <tr>
+                <td> CITY </td>
+                <td> <select name="cityin"> </select></td>
+                <td> <span id="cityerr" style="color:red;"> </span></td>
+            </tr>
+            <td>
+                <button type="button" onclick="validForm()">Submit</button>
+            </td>
+        </table>
     </form>
 </body>
+
 </html>

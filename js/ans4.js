@@ -13,5 +13,10 @@ function setAlarm() {
         }, timeToAlarm);
     } else {
         console.log("Please select a future time.");
-    }
+   }
+  console.log(Date())
+
+  var s = new Date():
+  
+
 }
